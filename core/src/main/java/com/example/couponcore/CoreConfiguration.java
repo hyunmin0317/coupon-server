@@ -7,6 +7,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @EnableJpaAuditing
 @ComponentScan
 @EnableAutoConfiguration
-public class CouponCoreConfiguration {
+public class CoreConfiguration {
 
 }
