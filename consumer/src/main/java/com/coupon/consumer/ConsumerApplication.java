@@ -1,4 +1,4 @@
-package com.example.couponconsumer;
+package com.coupon.consumer;
 
 import com.example.couponcore.CoreConfiguration;
 import org.springframework.boot.SpringApplication;
