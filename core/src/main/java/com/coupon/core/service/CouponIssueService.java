@@ -20,7 +20,7 @@ public class CouponIssueService {
     private final CouponIssueRepository couponIssueRepository;
 
     @Transactional
-    public void issue(long couponId, long userId) {
+    public void issueV1(long couponId, long userId) {
         Coupon coupon = findCoupon(couponId);
         coupon.issue();
         saveCouponIssue(couponId, userId);
