@@ -1,14 +1,13 @@
-package com.example.couponcore.service;
+package com.coupon.core.service;
 
-import com.example.couponcore.TestConfig;
-import com.example.couponcore.exception.CouponIssueException;
-import com.example.couponcore.exception.ErrorCode;
-import com.example.couponcore.model.Coupon;
-import com.example.couponcore.model.CouponIssue;
-import com.example.couponcore.model.CouponType;
-import com.example.couponcore.repository.mysql.CouponIssueJpaRepository;
-import com.example.couponcore.repository.mysql.CouponIssueRepository;
-import com.example.couponcore.repository.mysql.CouponJpaRepository;
+import com.coupon.core.TestConfig;
+import com.coupon.core.exception.CouponIssueException;
+import com.coupon.core.model.Coupon;
+import com.coupon.core.model.CouponIssue;
+import com.coupon.core.model.CouponType;
+import com.coupon.core.repository.mysql.CouponIssueJpaRepository;
+import com.coupon.core.repository.mysql.CouponIssueRepository;
+import com.coupon.core.repository.mysql.CouponJpaRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -17,7 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.time.LocalDateTime;
 
-import static com.example.couponcore.exception.ErrorCode.*;
+import static com.coupon.core.exception.ErrorCode.*;
 
 class CouponIssueServiceTest extends TestConfig {
 
@@ -53,7 +52,7 @@ class CouponIssueServiceTest extends TestConfig {
         CouponIssueException exception = Assertions.assertThrows(CouponIssueException.class, () -> {
             sut.saveCouponIssue(couponIssue.getCouponId(), couponIssue.getUserId());
         });
-        Assertions.assertEquals(exception.getErrorCode(), ErrorCode.DUPLICATED_COUPON_ISSUE);
+        Assertions.assertEquals(exception.getErrorCode(), DUPLICATED_COUPON_ISSUE);
     }
 
     @Test

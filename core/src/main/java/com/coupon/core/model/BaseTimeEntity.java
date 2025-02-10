@@ -1,4 +1,4 @@
-package com.example.couponcore.model;
+package com.coupon.core.model;
 
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.MappedSuperclass;

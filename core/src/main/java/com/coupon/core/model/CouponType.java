@@ -1,4 +1,4 @@
-package com.example.couponcore.model;
+package com.coupon.core.model;
 
 public enum CouponType {
     FIRST_COME_FIRST_SERVED // 선착순 쿠폰

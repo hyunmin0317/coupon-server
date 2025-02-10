@@ -1,4 +1,4 @@
-package com.example.couponcore.exception;
+package com.coupon.core.exception;
 
 public enum ErrorCode {
     INVALID_COUPON_ISSUE_QUANTITY,

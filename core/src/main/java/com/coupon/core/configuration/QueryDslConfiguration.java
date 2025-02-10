@@ -1,4 +1,4 @@
-package com.example.couponcore.configuration;
+package com.coupon.core.configuration;
 
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import jakarta.persistence.EntityManager;

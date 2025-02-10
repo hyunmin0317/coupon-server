@@ -1,14 +1,14 @@
-package com.example.couponcore.model;
+package com.coupon.core.model;
 
-import com.example.couponcore.exception.CouponIssueException;
+import com.coupon.core.exception.CouponIssueException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
 
-import static com.example.couponcore.exception.ErrorCode.INVALID_COUPON_ISSUE_DATE;
-import static com.example.couponcore.exception.ErrorCode.INVALID_COUPON_ISSUE_QUANTITY;
+import static com.coupon.core.exception.ErrorCode.INVALID_COUPON_ISSUE_DATE;
+import static com.coupon.core.exception.ErrorCode.INVALID_COUPON_ISSUE_QUANTITY;
 
 class CouponTest {
 
