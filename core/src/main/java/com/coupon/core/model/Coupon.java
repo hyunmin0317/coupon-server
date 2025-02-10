@@ -35,6 +35,9 @@ public class Coupon extends BaseTimeEntity {
     private int issuedQuantity;
 
     @Column(nullable = false)
+    private int discountAmount;
+
+    @Column(nullable = false)
     private int minAvailableAmount;
 
     @Column(nullable = false)
