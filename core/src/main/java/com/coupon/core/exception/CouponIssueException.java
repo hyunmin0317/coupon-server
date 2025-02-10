@@ -1,4 +1,4 @@
-package com.example.couponcore.exception;
+package com.coupon.core.exception;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

@@ -1,7 +1,7 @@
-package com.example.couponcore.model;
+package com.coupon.core.model;
 
-import com.example.couponcore.exception.CouponIssueException;
-import com.example.couponcore.exception.ErrorCode;
+import com.coupon.core.exception.CouponIssueException;
+import com.coupon.core.exception.ErrorCode;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,12 +1,12 @@
-package com.example.couponcore.service;
+package com.coupon.core.service;
 
-import com.example.couponcore.exception.CouponIssueException;
-import com.example.couponcore.exception.ErrorCode;
-import com.example.couponcore.model.Coupon;
-import com.example.couponcore.model.CouponIssue;
-import com.example.couponcore.repository.mysql.CouponIssueJpaRepository;
-import com.example.couponcore.repository.mysql.CouponIssueRepository;
-import com.example.couponcore.repository.mysql.CouponJpaRepository;
+import com.coupon.core.exception.CouponIssueException;
+import com.coupon.core.exception.ErrorCode;
+import com.coupon.core.model.Coupon;
+import com.coupon.core.model.CouponIssue;
+import com.coupon.core.repository.mysql.CouponIssueJpaRepository;
+import com.coupon.core.repository.mysql.CouponIssueRepository;
+import com.coupon.core.repository.mysql.CouponJpaRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
