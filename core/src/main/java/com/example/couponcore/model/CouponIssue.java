@@ -15,14 +15,14 @@ import java.time.LocalDateTime;
 @Getter
 @Entity
 @Table(name = "coupon_issues")
-public class CouponIssue {
+public class CouponIssue extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private String couponId;
+    private Long couponId;
 
     @Column(nullable = false)
     private Long userId;
